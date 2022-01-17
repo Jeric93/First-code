@@ -156,6 +156,22 @@ def minimax(board, depth, isMaximizing):
                         bestScore = score
 
         return bestScore
+        
+        
+board = {1: ' ', 2: ' ', 3: ' ',
+         4: ' ', 5: ' ', 6: ' ',
+         7: ' ', 8: ' ', 9: ' '}
+
+printBoard(board)
+print("Comp goes first. May the odds be with you!")
+print("Positions are as follow:")
+print("1, 2, 3 ")
+print("4, 5, 6 ")
+print("7, 8, 9 ")
+print("\n")
+player = 'O'
+bot = 'X'
+
 
 while not checkForWin():
     compMove()
